@@ -256,9 +256,12 @@
 /********** picture ********/
 
 .picture__content {
+    position: absolute;
     margin-top: 16px;
+    margin-left: -16px;
 }
 
+/********** > 768px ********/
 
 @media (min-width: 768px) {
     .body{
@@ -328,8 +331,10 @@
 
     .description {
         width: 312px;
-        height: 168px;
-        margin-top: 18px;
+    }
+
+    .description__block1 {
+        margin-top: 36px;
     }
 
     .description__block2 {
@@ -353,6 +358,7 @@
     }
 
     .picture__content {
+        position: initial;
         width: 320px;
         height: 208px;
         border-radius: 4px;
@@ -360,6 +366,8 @@
     }
 
 }
+
+/********** > 1120px ********/
 
 @media (min-width: 1120px) {
     .body{

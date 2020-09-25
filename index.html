@@ -11,13 +11,13 @@
     <header class="header">
         <div class="header__wrapper container">
             <ul class="header__items">
-                <li><button class="header__burger burger" type="button"><span class="visually-hidden">Меню</span></button></button></li>
-                <li><button class="header__logo logo" type="button"><span class="visually-hidden">Логотип</span></button></li>
-                <li><button class="header__call call" type="button"><span class="visually-hidden">Заказать звонок</span></button></li>
-                <li><button class="header__chat chat" type="button"><span class="visually-hidden">Начать чат</span></button></li>
-                <li><button class="header__profile profile" type="button"><span class="visually-hidden">Зайти в профиль</span></button></li>
-                <li><button class="header__repair repair" type="button"><span class="visually-hidden">Оставить заявку</span></button></li>
-                <li><button class="header__check-status check-status" type="button"><span class="visually-hidden">Статус ремонта</span></button></li>
+                <li class="header__burger"><button class="burger" type="button"><span class="visually-hidden">Меню</span></button></button></li>
+                <li class="header__logo"><button class="logo" type="button"><span class="visually-hidden">Логотип</span></button></li>
+                <li class="header__call"><button class="call" type="button"><span class="visually-hidden">Заказать звонок</span></button></li>
+                <li class="header__chat"><button class="chat" type="button"><span class="visually-hidden">Начать чат</span></button></li>
+                <li class="header__profile"><button class="profile" type="button"><span class="visually-hidden">Зайти в профиль</span></button></li>
+                <li class="header__repair"><button class="repair" type="button"><span class="visually-hidden">Оставить заявку</span></button></li>
+                <li class="header__check-status"><button class="check-status" type="button"><span class="visually-hidden">Статус ремонта</span></button></li>
             </ul>
         </div>
     </header>
@@ -28,8 +28,8 @@
                     <h1 class="title__text">Услуги и сервисы</h1>
                 </div>
                 <div class="main__buttons">
-                    <button class="main__repair repair" type="button"><span class="repair__text">Оставить заявку</span></button>
-                    <button class="main__check-status check-status" type="button"><span class="check-status__text">Статус ремонта</span></button>
+                    <div class="main__repair-btn"><button class="main__repair repair" type="button"><span class="repair__text">Оставить заявку</span></button></div>
+                    <div class="main__check-status-btn"><button class="main__check-status check-status" type="button"><span class="check-status__text">Статус ремонта</span></button></div>
                 </div>
             </div>
             <ul class="slider">
@@ -49,11 +49,10 @@
                     <span class="read-more__text">Читать далее</span>
                 </button>
             </div>
-            <div class="picture">
+            <article class="picture">
                 <img class="picture__content" src="styles/images/_MG_3223.jpg" width="320" height="176">
-            </div>
+            </article>
         </div>
-
     </main>
 </body>
 </html>
