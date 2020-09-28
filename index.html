@@ -9,50 +9,46 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="header__wrapper container">
-            <ul class="header__items">
-                <li class="header__burger"><button class="burger" type="button"><span class="visually-hidden">Меню</span></button></button></li>
-                <li class="header__logo"><button class="logo" type="button"><span class="visually-hidden">Логотип</span></button></li>
-                <li class="header__call"><button class="call" type="button"><span class="visually-hidden">Заказать звонок</span></button></li>
-                <li class="header__chat"><button class="chat" type="button"><span class="visually-hidden">Начать чат</span></button></li>
-                <li class="header__profile"><button class="profile" type="button"><span class="visually-hidden">Зайти в профиль</span></button></li>
-                <li class="header__repair"><button class="repair" type="button"><span class="visually-hidden">Оставить заявку</span></button></li>
-                <li class="header__check-status"><button class="check-status" type="button"><span class="visually-hidden">Статус ремонта</span></button></li>
-            </ul>
-        </div>
+        <button class="header__menu menu" type="button"><span class="menu__text visually-hidden">Меню</span></button>
+        <a class="header__logo logo" href="#"><span class="logo__text visually-hidden">Логотип</span></a>
+        <ul class="header__interactions">
+            <li class="header__call"><button class="call" type="button"><span class="call__text visually-hidden">Заказать звонок</span></button></li>
+            <li class="header__chat"><button class="chat" type="button"><span class="chat__text visually-hidden">Начать чат</span></button></li>
+            <li class="header__profile"><a class="profile" href="#"><span class="profile__text visually-hidden">Зайти в профиль</span></a></li>
+        </ul>
+        <ul class="header__order">
+            <li class="header__repair"><a class="repair" href="#"><span class="repair__text visually-hidden">Оставить заявку</span></a></li>
+            <li class="header__check-status"><a class="check-status" href="#"><span class="check-status__text visually-hidden">Статус ремонта</span></a></li>
+        </ul>
     </header>
     <main class="main">
-        <div class="main__wrapper container">
-            <div class="main__header">
-                <div class="title">
-                    <h1 class="title__text">Услуги и сервисы</h1>
-                </div>
-                <div class="main__buttons">
-                    <div class="main__repair-btn"><button class="main__repair repair" type="button"><span class="repair__text">Оставить заявку</span></button></div>
-                    <div class="main__check-status-btn"><button class="main__check-status check-status" type="button"><span class="check-status__text">Статус ремонта</span></button></div>
-                </div>
-            </div>
-            <ul class="slider">
-                <li class="slider__item"><button class="slider__btn" type="button">Ремонтируемые устройства</button></li>
-                <li class="slider__item"><button class="slider__btn" type="button">Дополнительные услуги</button></li>
-                <li class="slider__item"><button class="slider__btn" type="button">Цены на услуги</button></li>
-                <li class="slider__item"><button class="slider__btn" type="button">Адреса сервисных центров</button></li>
-                <li class="slider__item"><button class="slider__btn" type="button">Специальные цены</button></li>
-                <li class="slider__item"><button class="slider__btn" type="button">Отзывы</button></li>
+        <div class="main__header">
+            <h1 class="main__title">Услуги и сервисы</h1>
+            <ul class="main__order">
+                <li class="main__item"><a class="main__repair repair" href="#"><span class="repair__text">Оставить заявку</span></a></li>
+                <li class="main__item"><a class="main__check-status check-status" href="#"><span class="check-status__text">Статус ремонта</span></a></li>
             </ul>
-            <article class="description">
-                <p class="description__block1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="description__block2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="description__span">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-            </article>
-            <div class="read-more">
-                <button class="read-more__btn" type="button">
-                    <span class="read-more__text">Читать далее</span>
-                </button>
-            </div>
-            <article class="picture">
-                <img class="picture__content" src="styles/images/_MG_3223.jpg" width="320" height="176" alt="Логотип CPS">
-            </article>
         </div>
+        <nav class="nav">
+            <ul class="nav__slider">
+                <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Дополнительные услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
+            </ul>
+        </nav>
+        <article class="article">
+            <div class="article__text">
+                <p class="article__block1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <p class="article__block2">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="article__span">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+            </div>
+            <button class="article__read-more read-more" type="button">
+                <span class="read-more__text">Читать далее</span>
+            </button>
+            <img class="article__image" src="styles/images/_MG_3223.jpg" width="320" height="176" alt="Логотип CPS">
+        </article>
     </main>
 </body>
 </html>
