@@ -9,39 +9,25 @@
 </head>
 <body class="body">
     <header class="header">
-        <button class="header__button button button--menu" type="button" aria-label="Меню"></button>
+        <button class="header__menu-btn button button--menu" type="button" aria-label="Меню"></button>
         <a class="header__logo logo" href="#" aria-label="Логотип"><img class="logo__img" src="images/icons/Group.svg" alt="Логотип" width="97px" height="51px"></a>
         <ul class="header__interaction interaction">
-            <li class="interaction__call"><button class="button button--call" type="button" aria-label="Заказать звонок"></button></li>
-            <li class="interaction__feedback"><button class="button button--feedback" type="button" aria-label="Обратная связь"></button></li>
-            <li class="interaction__profile"><a class="button button--profile" href="#" aria-label="Зайти в профиль"></a></li>
+            <li class="interaction__item"><button class="button button--call" type="button" aria-label="Заказать звонок"></button></li>
+            <li class="interaction__item"><button class="button button--feedback" type="button" aria-label="Обратная связь"></button></li>
+            <li class="interaction__item"><a class="button button--profile" href="#" aria-label="Зайти в профиль"></a></li>
         </ul>
         <ul class="header__order order">
-            <li class="order__repair order__repair--before"><a class="button button--repair" href="#" aria-label="Оставить заявку"></a></li>
-            <li class="order__check-status"><a class="button button--check-status" href="#" aria-label="Статус ремонта"></a></li>
+            <li class="order__item"><a class="button button--repair" href="#" aria-label="Оставить заявку"><span class="button__text">Оставить заявку</span></a></li>
+            <li class="order__item"><a class="button button--check-status" href="#" aria-label="Статус ремонта"><span class="button__text">Статус ремонта</span></a></li>
         </ul>
     </header>
     <main class="main">
-        <div class="main__header">
+        <div class="main__topic">
             <h1 class="main__title title">Услуги и сервисы</h1>
-            <ul class="main__order order">
-                <li class="order__repair">
-                    <a class="order__link order__link--decoration-none" href="#">
-                        <span class="order__text order__text--color">Оставить заявку</span>
-                        <div class="button button--repair"></div>
-                    </a>
-                </li>
-                <li class="order__check-status">
-                    <a class="order__link order__link--decoration-none" href="#">
-                        <span class="order__text order__text--color">Оставить заявку</span>
-                        <div class="button button--check-status"></div>
-                    </a>
-                </li>
-            </ul>
         </div>
         <nav class="main__nav nav">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="#">Ремонтируемые устройства</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Дополнительные услуги</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
@@ -50,14 +36,16 @@
             </ul>
         </nav>
         <article class="main__article article">
-            <div class="article__text text">
+            <div class="article__text">
                 <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                 <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             </div>
             <button class="article__read-more read-more" type="button">
                 <span class="read-more__text">Читать далее</span>
             </button>
-            <img class="article__image" src="images/logo.jpg" width="320" height="176" alt="Логотип CPS">
+            <div class="article__picture">
+                <img class="article__image" src="images/logo.jpg" width="320" height="176" alt="Логотип CPS">
+            </div>
         </article>
     </main>
 </body>
