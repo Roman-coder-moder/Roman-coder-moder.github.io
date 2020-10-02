@@ -164,11 +164,11 @@
     justify-content: space-between;
 }
 
-.main__topic {
+.main__title {
     padding: 0 16px;
 }
 
-.title::before {
+.title__text::before {
     content: "";
     width: 4px;
     height: 40px;
@@ -178,11 +178,13 @@
     position: absolute;
 }
 
-.title {
+.title__text {
+    display: inline-block;
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6px;
     text-align: left;
+    margin: 20px 0;
 }
 
 /********** nav ********/
@@ -201,7 +203,6 @@
     height: 40px;
     width: 40px;
     position: absolute;
-    margin-top: 8px;
     right: 16px;
     background-image:linear-gradient(to right, rgba(255, 255, 255, 0), #F8F8F8 80%)
 }
@@ -244,10 +245,6 @@
 
 /********** article ********/
 
-.main__article {
-
-}
-
 .article {
     display: flex;
     flex-direction: column;
@@ -273,10 +270,6 @@
     background-color: inherit;
     padding: 10px 5px 10px 0;
     cursor: pointer;
-}
-
-.read-more:active .read-more__text{
-    color: red;
 }
 
 .read-more::before {
@@ -358,13 +351,13 @@
         height: 280px;
     }
 
-    .title::before {
+    .title__text::before {
         margin-left: -40px;
     }
 
     .article__text {
         height: 130px;
-        width: 50%;
+        width: calc(100% - 400px);
     }
 
     .article__picture {
@@ -393,8 +386,8 @@
     .header__order {
         display: flex;
         position: absolute;
-        top: 25px;
-        right: 42px;
+        top: 20px;
+        right: 45px;
         margin-left: 0;
     }
 
@@ -403,15 +396,19 @@
     }
 
     .order__item + .order__item {
-        margin-left: 150px;
+        margin-left: 24px;
+    }
+
+    .order__link {
+        text-decoration: none;
     }
 
     .button__text {
-        display: inline-block;
+        display: block;
         font-size: initial;
         color: #1B1C21;
         white-space: nowrap;
-        margin: 8px 0 0 -130px;
+        margin-right: 8px;
     }
 
     .button__text:active {
@@ -422,7 +419,7 @@
         padding: 0 32px;
     }
 
-    .title::before {
+    .title__text::before {
         margin-left: -48px;
     }
 
@@ -446,7 +443,7 @@
     }
 
     .article__text {
-        height: 150px;
+        width: calc(100% - 600px);
     }
 
     .article__picture {
