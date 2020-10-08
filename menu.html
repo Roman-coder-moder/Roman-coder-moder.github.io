@@ -10,9 +10,9 @@
 <body class="body">
     <aside class="menu">
         <header class="menu__header">
-            <button class="menu__button button button--close" type="button"></button>
+            <button class="menu__close-btn button button--close" type="button"></button>
             <a class="menu__logo logo" href="#" aria-label="Логотип"><img class="logo__img" src="images/icons/Group.svg" alt="Логотип" width="97px" height="51px"></a>
-            <a class="menu__button button button--search" href="#" aria-label="Поиск по сайту"></a>
+            <a class="menu__search-btn button button--search" href="#" aria-label="Поиск по сайту"></a>
         </header>
         <nav class="menu__nav-menu nav-menu">
             <ul class="nav-menu__list">
@@ -26,21 +26,17 @@
                 <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="menu__contacts contacts">
-            <li class="contacts__item">
-                <ul class="contacts__interaction interaction">
-                    <li class="interaction__item"><button class="button button--call" type="button" aria-label="Заказать звонок"></button></li>
-                    <li class="interaction__item"><button class="button button--feedback" type="button" aria-label="Обратная связь"></button></li>
-                    <li class="interaction__item"><a class="button button--profile" href="#" aria-label="Зайти в профиль"></a></li>
-                </ul>
-            </li>
-            <li class="contacts__item"><a class="contacts__mail mail" href="#" aria-label="Почта CPS">mail@cps.com</a></li>
-            <li class="contacts__item"><span class="contacts__tel tel" aria-label="Телефон справочной">8 800 890 8900</span></li>
+        <ul class="menu__interaction-list interaction-list">
+            <li class="interaction-list__item"><button class="button button--call" type="button" aria-label="Заказать звонок"></button></li>
+            <li class="interaction-list__item"><button class="button button--feedback" type="button" aria-label="Обратная связь"></button></li>
+            <li class="interaction-list__item"><a class="button button--profile" href="#" aria-label="Зайти в профиль"></a></li>
         </ul>
-        <ul class="menu__lang lang">
-            <li class="lang__item"><button class="lang__btn lang__btn--active" type="button" aria-label="Сменить язык на русский">ru</button></li>
-            <li class="lang__item"><button class="lang__btn" type="button" aria-label="Сменить язык на английский">en</button></li>
-            <li class="lang__item"><button class="lang__btn" type="button" aria-label="Сменить язык на китайский">ch</button></li>
+        <a class="menu__mail mail" href="mailto: mail@cps.com" aria-label="Почта CPS">mail@cps.com</a>
+        <a class="menu__tel tel" href="tel: 8 800 890 8900" aria-label="Телефон справочной">8 800 890 8900</a>
+        <ul class="menu__lang-list lang-list">
+            <li class="lang-list__item"><button class="lang-list__btn lang-list__btn--active" type="button" aria-label="Сменить язык на русский">ru</button></li>
+            <li class="lang-list__item"><button class="lang-list__btn" type="button" aria-label="Сменить язык на английский">en</button></li>
+            <li class="lang-list__item"><button class="lang-list__btn" type="button" aria-label="Сменить язык на китайский">ch</button></li>
         </ul>
     </aside>
 </body>
