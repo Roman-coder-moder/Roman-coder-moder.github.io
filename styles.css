@@ -390,9 +390,6 @@
 
 .menu__mail {
     padding-left: 24px;
-}
-
-.mail {
     font-family: "TT Lakes", serif;
     font-size: 16px;
     line-height: 24px;
@@ -411,9 +408,6 @@
 
 .menu__tel {
     padding-left: 24px;
-}
-
-.tel {
     font-family: TT Lakes, serif;
     font-size: 24px;
     line-height: 32px;
@@ -424,9 +418,6 @@
 
 .menu__lang-list {
     margin: 8px 0;
-}
-
-.lang-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -437,11 +428,11 @@
     padding-right: 24px;
 }
 
-.lang-list__item + .lang-list__item {
+.menu__lang-list-item + .menu__lang-list-item {
     margin-left: 8px;
 }
 
-.lang-list__btn {
+.menu__lang-list-btn {
     font-size: 24px;
     border: 0;
     background-color: inherit;
@@ -449,8 +440,8 @@
     cursor: pointer;
 }
 
-.lang-list__btn:hover,
-.lang-list__btn--active {
+.menu__lang-list-btn:hover,
+.menu__lang-list-btn--active {
     filter: opacity(0.5);
 }
 
